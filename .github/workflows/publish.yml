@@ -25,5 +25,5 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build . --tag ghcr.io/Morikky/image1:latest
-              docker push ghcr.io/Morikky/image1:latest
+              docker build . --tag ghcr.io/morikky/image1:latest
+              docker push ghcr.io/morikky/image1:latest
