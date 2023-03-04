@@ -8,9 +8,11 @@ env:
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [ "main" ]
+    # Publish semver tags as releases.
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
       push-store-image:
@@ -63,6 +65,5 @@ jobs:
           #    docker push ghcr.io/morikky/image1:latest
               
     
-
 
 
